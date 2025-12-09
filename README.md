@@ -28,7 +28,7 @@ Edit the Allew Resources/.env file and add your API keys.
 ## How to use
 
 To run a model, use the following command(works only for foundery,huggingface and ollama):
-
+(not necesary)
 ```bash
 python allew.py --provider <provider> --model <model> --dwmodel
 ```
