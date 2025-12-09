@@ -1,0 +1,4 @@
+{
+  "provider": "openai",
+  "requires_api_key": true
+}

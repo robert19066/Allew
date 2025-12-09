@@ -1,0 +1,4 @@
+{
+  "provider": "google",
+  "requires_api_key": true
+}

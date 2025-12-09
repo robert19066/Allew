@@ -1,0 +1,6 @@
+{
+  "provider": "huggingface",
+  "supports_local": true,
+  "supports_remote": true,
+  "requires_api_key": true
+}

@@ -1,0 +1,5 @@
+{
+  "provider": "foundery",
+  "windows_only": true,
+  "local_only": true
+}
