@@ -23,27 +23,27 @@ or for torch for cpu: pip install torch --index-url https://download.pytorch.org
 ## Dotenv
 
 To use OpenAI,Google and HuggingFace(api) models,you need to set up environment variables.
-Edit the Allew Resources/.env file and add your API keys.
+Create the Allew Resources/.env file and add your API keys.
+For OpenAI use OPENAI_API_KEY
+For Google Gemeni, use GOOGLE_API_KEY
+And for HugginngFace use HUGGINGFACE_ACCES_TOKEN
 
 ## How to use
 
 To run a model, use the following command(works only for foundery,huggingface and ollama):
 (not necesary)
-```bash
-python allew.py --provider <provider> --model <model> --dwmodel
-```
+Flags:
+- `--provider<provider>` = specifies the provider.
+- `--model<model>` = specifies the model
+- `--dwmodel` = dowloads a model(only necesary for foundery)
+- `--runmodel` = runs the model of course
 
-To run a model:
+**(ONLY FOR HUGGINGFACE)**
+- `--cudax` = use CUDA hardware acceleration
+- `--method<local or remote>` = specifies if the model shall be runned localy or remotely(using http)
 
-```bash
-python allew.py --provider <prov> --model <model> --runmodel
-```
-
-(ONLY FOR HUGGINGFACE)
-To run a model with cuda support:
-
-```bash
-python allew.py --provider <prov> --model <model> --runmodel --cudax
-```
-
+Sorry for the inconvenience, but running remote models is curently not possible, as the api is compleately broken. Will be fixed in a future patch!
 cudax means cuda acceleration.
+
+# Known issues
+- `--method remote` displaying a error message(the feature has been temporary disabled due to bugs, will be added back(maybe))
